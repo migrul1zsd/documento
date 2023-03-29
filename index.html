@@ -1,76 +1,88 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
     <title>Documentos</title>
 </head>
+!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="style.css">
+
+    <title>Formulário</title>
+</head>
 <body>
-    <div class="fullcenteer">
+    <div class="fullcenter">
         <div id="formulario">
-            <h1>Cadastro</h1>
+            <h1>CADASTRO</h1>
+            
             <form>
-                <label for="nema">Nome:</label>
-                <input type="text" id="name" placeholder="Nome">
-                <label for="colorpicker">Cor favorita</label>
-                <input type="colo" id="colorpicker">
-                <label for="Nascimento">Data de Nascimento</label>
-                <input type="date" id="Nascimento">
+                <label for="name">Nome</label>
+                <input type="text" id="name" placeholder="name"class="textfield">
 
-                <label for="hrnascimento">Horario do nascimento</label>
+                <label for="colorpicker">Cor favorita</label>
+                <input type="color" id="colorpicker"><br>
+                <label for="date" id="nascimento">Data de nascimento</label>
+                <input type="date"id="nascimento"> 
+
+                <label for="hrnascimento">Horário do nascimento</label>
                 <input type="time" id="hrnascimento">
 
-                <label for="email">E-mail</label>
-                <input type="email" id="email" placeholder="aabb@.com">
-                <label for="email">confirme o E-mail</label>
-                <input type="email" id="confemail" placeholder="aabb@.com">
+                <label for="Email">E-mail</label>
+                <input type="email" id="email"placeholder="aaa@bbb.com" class="textfield">
+                <label for="confemail">Confirme o e-mail:</label>
+                <input type="email" id="confemail" placeholder="aaa@bbb.com" class="textfield">
 
-                <label for="doc">Faca upload do documento:</label>
-                <input type="file" id="doc" accept=" .pdf">
+                <label for="doc">Faça upload do documento</label>
+                <input type="file" id="doc" accept=".pdf" multiple>
 
                 <input type="hidden" id="test" value="test">
 
-                <label for="imagem">Faca upload da Foto:</label>
-                <input type="imagem">
+
+                <label for="image">Faça upload da foto</label>
+                <input type="image" id="image">
 
                 <label for="telefone">telefone</label>
-                <input type="numero" id="telefone" placeholder="(11) 4002 0922">
+                <input type="number" id="telefone" placeholder="(11) 99999-99" class="textfield">
 
-                <label for="pass">senha</label>
+                <label for="pass">Senha</label>
                 <input type="password" id="pass">
-                <label for="confpass">confirme a senha:</label>
-                <input type="password" id="confpass">
+                <label for="confpass">Confirme a senha</label>
+                <input type="password" id="confpass" class="textfield">
 
                 <label for="sexo">sexo</label>
 
                 <input type="radio" id="fem" name="sexo" value="f">
-                <label for="fem">feminino</label>
+                <label for="fem">Feminino</label>
 
                 <input type="radio" id="masc" name="sexo" value="m">
-                <label for="masc">masculino</label>
+                <label for="masc">Masculino</label>
 
-                <input type="radio" name="ni" id="sexo" value="n">
+                <input type="radio" id="ni" name="sexo" value="n">
                 <label for="ni">prefere não declarar</label>
 
-                <label for="stifacao"></label>
-                <input type="type" id="stifacao">
+                <label for="satisfação">satisfação</label>
+                <input type="range" id="satisfação">
 
                 <input type="checkbox" id="agreet" value="y">
-                <label for="agree">Concordo com os termos</label>
+                <label for="agree">Concordo com os temas</label>
                 <input type="checkbox" id="agreep" value="y">
-                <label type for="agree">concordo as politicas</label>
+                <label for="agree">Concordo com as politicas</label>
 
-                <input type="reset" value="Limpar">
-                <button>Enviar</button>
-
+                <input type="reset" value="limpar" class="whiteButton">
+                <button class="whiteButton" type="button">Enviar</button>
 
             </form>
         </div>
     </div>
+    
 </body>
-
 </html>
